@@ -1,0 +1,153 @@
+---
+---
+
+@import "minima";
+
+// Custom styles for y2v.world
+
+// Color variables
+$primary-color: #3a5a78;
+$secondary-color: #f5a623;
+$text-color: #333333;
+$light-bg: #f8f9fa;
+$border-color: #e0e0e0;
+
+// Global styles
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  color: $primary-color;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: darken($primary-color, 15%);
+    text-decoration: underline;
+  }
+}
+
+// Button styles
+.button {
+  display: inline-block;
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.button-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+// Header and navigation
+.site-header {
+  border-top: 5px solid $primary-color;
+  border-bottom: 1px solid $border-color;
+  min-height: 60px;
+  
+  .site-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+  }
+  
+  .site-nav .page-link {
+    color: $primary-color;
+    font-weight: 600;
+  }
+}
+
+// Post styles
+.post-preview {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-color;
+  
+  h2, h3 {
+    margin-top: 0;
+  }
+  
+  .post-date {
+    color: lighten($text-color, 30%);
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .post-excerpt {
+    margin-bottom: 10px;
+  }
+  
+  .read-more {
+    font-weight: 600;
+  }
+}
+
+// Homepage sections
+.home-section {
+  padding: 40px 0;
+  
+  &:nth-child(even) {
+    background-color: $light-bg;
+  }
+}
+
+// Contact form
+.contact-form {
+  max-width: 500px;
+  margin: 20px 0;
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid $border-color;
+  padding: 30px 0;
+  background-color: $light-bg;
+  
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+// Responsive design
+@media screen and (max-width: 600px) {
+  .button {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+# Site settings
+title: y2v.world
+email: your-email@example.com
+description: >-
+  Exploring the intersection of impact, public policy, Vedanta, and emerging technologies.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://y2v.world" # the base hostname & protocol for your site
+github_username: your-github-username
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - index.md
+  - about.md
+  - blog.md
+  - yukti-vijnana.md
+  - topics.md
+  - contact.md
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
